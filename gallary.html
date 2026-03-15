@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gallery</title>
+<link rel="stylesheet" href="gallary.css">
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!-- ===== BACKGROUND SHAPES ===== -->
+<div class="bg-shapes">
+  <span class="shape s1"></span>
+  <span class="shape s2"></span>
+  <span class="shape s3"></span>
+  <span class="shape s4"></span>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<nav>
+<div><b>Lu Min Htet</b></div>
+<div>
+<a href="results.html">View Students' Results</a>
+<a href="gallary.html">Gallery</a>
+<a href="contact.html">Contact</a>
+</div>
+</nav>
+
+
+<!-- ===== GALLERY CONTENT ===== -->
+<div class="gallery-section glass-card">
+<a class="back" href="index.html">← Home</a>
+  <!-- Graduation -->
+  <h2>3rd Graduation (2026) 🎓</h2>
+  <div class="gallery-grid">
+    <img src="graduation/1.jpg" alt="Graduation Photo 1">
+    <img src="graduation/4.jpg" alt="Graduation Photo 2">
+    <img src="graduation/6.jpg" alt="Graduation Photo 3">
+    <img src="graduation/2.jpg" alt="Graduation Photo 6">
+  </div>
+
+    <!-- Student Events -->
+  <h2>Ngwe Saung School Trip 🎉</h2>
+  <div class="gallery-grid">
+    <img src="trip/1.jpg" alt="Event Photo 1">
+    <img src="trip/2.jpg" alt="Event Photo 2">
+    <img src="trip/3.jpg" alt="Event Photo 3">
+    <img src="trip/4.jpg" alt="Event Photo 4">
+  </div>
+
+  <!-- In-Class Teaching -->
+  <h2>In-Class Teaching 🏫</h2>
+  <div class="gallery-grid">
+    <img src="images/class1.jpg" alt="Class Photo 1">
+    <img src="images/class2.jpg" alt="Class Photo 2">
+    <img src="images/class3.jpg" alt="Class Photo 3">
+  </div>
+
+</div>
+
+<script>
+  // Optional Lightbox (click to enlarge)
+  const images = document.querySelectorAll('.gallery-grid img');
+  images.forEach(img => {
+    img.addEventListener('click', () => {
+      const src = img.src;
+      const win = window.open(src, '_blank');
+      win.focus();
+    });
+  });
+</script>
+
+<footer>
+© Lu Min Htet
+</footer>
+
+</body>
+</html>
