@@ -35,3 +35,17 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.gallery-section {
+  position: relative;
+}
+
+.gallery-section .back {
+  display: block;
+  text-align: left;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: #0071e3;
+  font-size: 16px;
+  font-weight: 500;
+}
